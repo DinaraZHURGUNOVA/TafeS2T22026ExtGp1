@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Calculator.MortgagePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+		<StackPanel Width="320" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+			<TextBlock Text="Mortgage Calculator" FontSize="28" TextAlignment="Center" Margin="0,0,0,24"/>
+
+			<TextBox x:Name="loanAmountBox" Header="Loan amount ($)" PlaceholderText="e.g. 500000" Margin="0,0,0,12"/>
+			<TextBox x:Name="interestRateBox" Header="Annual interest rate (%)" PlaceholderText="e.g. 6.5" Margin="0,0,0,12"/>
+			<TextBox x:Name="loanYearsBox" Header="Loan term (years)" PlaceholderText="e.g. 30" Margin="0,0,0,12"/>
+
+			<Button Content="Calculate" HorizontalAlignment="Stretch" Margin="0,0,0,12" Click="calculateButtonClick"/>
+
+			<TextBlock x:Name="monthlyResult" FontSize="18" Margin="0,0,0,6"/>
+			<TextBlock x:Name="totalResult" Margin="0,0,0,6"/>
+			<TextBlock x:Name="interestResult" Margin="0,0,0,24"/>
+
+			<Button Content="Back to Main Menu" HorizontalAlignment="Stretch" Click="backButtonClick"/>
+		</StackPanel>
+	</Grid>
+</Page>
