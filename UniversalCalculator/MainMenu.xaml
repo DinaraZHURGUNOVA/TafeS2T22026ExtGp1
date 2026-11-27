@@ -17,11 +17,13 @@
 
 			<Button Content="Math Calculator"
                     HorizontalAlignment="Stretch"
-                    Margin="0,0,0,12"/>
+                    Margin="0,0,0,12"
+                    Click="mathButtonClick"/>
 
 			<Button Content="Mortgage Calculator"
                     HorizontalAlignment="Stretch"
-                    Margin="0,0,0,12"/>
+                    Margin="0,0,0,12"
+                    Click="mortgageButtonClick"/>
 
 			<Button Content="Currency Calculator"
                     HorizontalAlignment="Stretch"
@@ -32,7 +34,8 @@
                     Margin="0,0,0,12"/>
 
 			<Button Content="Exit"
-                    HorizontalAlignment="Stretch"/>
+                    HorizontalAlignment="Stretch"
+                    Click="exitButtonClick"/>
 		</StackPanel>
 		<Image
 			Source="ms-appx:///Assets/abacus.jpg"

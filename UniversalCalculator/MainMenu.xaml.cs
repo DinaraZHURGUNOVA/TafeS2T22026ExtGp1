@@ -1,3 +1,4 @@
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
 namespace Calculator
@@ -7,6 +8,20 @@ namespace Calculator
 		public MainMenu()
 		{
 			InitializeComponent();
+		}
+	
+
+	private void mathButtonClick(object sender, RoutedEventArgs e)
+		{
+			Frame.Navigate(typeof(MainPage));
+		}
+		private void mortgageButtonClick(object sender, RoutedEventArgs e)
+		{
+			Frame.Navigate(typeof(MortgagePage));
+		}
+		private void exitButtonClick(object sender, RoutedEventArgs e)
+		{
+			Application.Current.Exit();
 		}
 	}
 }
