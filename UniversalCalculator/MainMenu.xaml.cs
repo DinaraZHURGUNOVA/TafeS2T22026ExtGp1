@@ -19,6 +19,14 @@ namespace Calculator
 		{
 			Frame.Navigate(typeof(MortgagePage));
 		}
+		private void currencyButtonClick(object sender, RoutedEventArgs e)
+		{
+			Frame.Navigate(typeof(Currency));
+		}
+		private void unitsButtonClick(object sender, RoutedEventArgs e)
+		{
+			Frame.Navigate(typeof(UnitsConverter));
+		}
 		private void exitButtonClick(object sender, RoutedEventArgs e)
 		{
 			Application.Current.Exit();

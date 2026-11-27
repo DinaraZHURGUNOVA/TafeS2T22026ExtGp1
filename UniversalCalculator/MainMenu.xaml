@@ -26,11 +26,13 @@
                     Click="mortgageButtonClick"/>
 
 			<Button Content="Currency Calculator"
-                    HorizontalAlignment="Stretch"
-                    Margin="0,0,0,12"/>
+				HorizontalAlignment="Stretch"
+				Margin="0,0,0,12"
+				Click="currencyButtonClick"/>
 
 			<Button Content="Units Converter"
                     HorizontalAlignment="Stretch"
+					Click="unitsButtonClick"
                     Margin="0,0,0,12"/>
 
 			<Button Content="Exit"
